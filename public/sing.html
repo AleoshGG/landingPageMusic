@@ -25,13 +25,13 @@
                 <h1>Crear Usuario</h1>
                 <form>
                     <label for="">Nombre de Usuario</label>
-                    <input type="text" placeholder="TagName (6 caracteres)" maxlength="6" minlength="1"/>
+                    <input id="name" type="text" placeholder="TagName (6 caracteres)" maxlength="6" minlength="1"/>
                     <label for="">Contraseña</label>
-                    <input type="password"/>
+                    <input type="password" id="password"/>
                     <label for="">Confirmar Contraseña</label>
-                    <input type="password"/>
+                    <input id="password-conf" type="password"/>
                 </form>
-                <button>Crear</button>
+                <button id="crear-usuario">Crear</button>
                 <a href="login.html" class="link">Iniciar Sesión <hr></a>
                 <div class="logo-form">
                     <img src="./img/Diseño sin título (1)_upscayl_5x_realesrgan-x4plus (1).png" alt="">
@@ -40,5 +40,7 @@
             </div>
         </div>
     </div>
+    
+    <script src="/src/scripts/sing.js"></script>
   </body>
 </html>
