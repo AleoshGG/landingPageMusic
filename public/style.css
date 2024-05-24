@@ -1,21 +1,5 @@
 body {
-    margin: 0;
-    padding: 0;
-   max-width: 100%; 
-   max-height: 100%; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-  }
- 
-  body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    background: rgb(52, 209, 191);
     background: radial-gradient(
       circle at 133% 20%,
       rgba(52, 209, 191, 1) 0%,
@@ -25,144 +9,426 @@ body {
       rgba(10, 21, 20, 1) 85%,
       rgba(7, 7, 7, 1) 94%
     );
-    z-index: -1;
-  }
-  
-  .menu .imgNav .imgMenu{
-    position: absolute;
-    width: 900px;
-    height: 900px;
-    top: -40px;
-    left: 60px;
-
+    font-family: "Radio Canada Big", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    height: 100%;
   }
 
-  .navbar{
-    position: absolute;
-    top: 30px;
-    left: 1000px;
-  }
+header {
+    display: flex;
+    width: 100%;
+}
 
-  a{
+header > .titulo {
+    width: 40%;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+}
+
+.menu {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+
+.menu > a {
     text-decoration: none;
-    color: white;
-  }
-  .navbar #inicio{
-    position: relative;
-    left: 10px;
-  }
+    color: #FFFFFF;
+    font-size: 20px;
+}
 
-  .navbar #benef{
-    position: relative;
-    left:50px;
-  }
+.menu > a:hover {
+    transition: 0.2s;
+    transform: scale(1.1);
+    color: #e0e0e0;
+}
 
-  .navbar #premium{
-    position: relative;
-    left: 100px;
-  }
+#usuario {
+    padding: 20px 40px;
+    border-radius: 8px;
+    border: none;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    font-family: "Radio Canada Big", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+}
 
-  .navbar .btn{
-    position: relative;
-    left: 310px;
-    top: -25px;
-    width: 100px;
-    height: 38px;
+#usuario > img {
+    width: 40px;
+}
+
+#usuario:hover {
+    transition: 0.5s;
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+#usuario:active {
+    transition: 0.2s;
+    color: #000000;
+}
+
+.inicio {
+    width: 100%;
+    display: flex;
+}
+
+.logo {
+    margin-top: 2%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fondo {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 25px;
+    transform: rotate(45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgMenu {
+    position: absolute;
+    width: 570px;
+    height: 570px;
+    transform: rotate(320deg);
+}
+
+.info-inicio {
+    width: 50%;
+    padding: 15px;
+}
+
+.texto-info {
+    margin-right: 45px;
+    text-align: right;
+    color: #FFFFFF;
+    font-size: 30px;
+}
+
+.imagenes-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img {
+    width: 280px;
+}
+
+/*Beneficios*/
+
+.beneficios {
+    width: 100%;
+}
+
+.titulo-b > h1, h2 {
+    color: #FFFFFF;
+    font-size: 45px;
+    margin-bottom: -25px;
+}
+
+.titulo-b > h1 {
+    margin-left: 45px;
+}
+
+.titulo-b > h2 {
+    margin-left: 135px;
+}
+
+.contenedor-beneficios {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+}
+
+.rectangulo-beneficios {
+    width: 28%;
+    height: 620px;
+    background-color: #e0e0e0;
+    border-radius: 35px;
+    box-shadow: -5px 5px 5px #000000;
+    padding: 15px;
+    text-align: center;
+}
+
+.rectangulo-beneficios > h2 {
+    color: #000000;
+    font-size: 25px;
+    display: inline-block;
+    margin: 10%;
+}
+
+.rectangulo-beneficios > img {
+    width: 90%;
+}
+
+.rectangulo-beneficios > p {
+    text-align: justify;
+    padding: 15px;
+}
+
+.rectangulo-beneficios > li {
+    text-align: start;
+    padding: 0 0 0 5%;
+}
+
+/* inicia disponible en */
+
+.disponible {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.disponible-left {
+    width: 50%;
+}
+
+.disponible-logo {
+    display: flex;
+    align-items: center;
+}
+
+.disponible-logo > img {
+    width: 150px;
+}
+
+.logo-d {
+    color: #FFFFFF;
+    font-size: 45px;
+    margin-left: -15px;
+}
+
+.disponible-left > p {
+    margin-top: -5%;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 25px;
+}
+
+.btn-descarga {
+    margin-left: 30%;
+    padding: 10px 45px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
     border-radius: 5px;
     border: none;
-    background-color: black;
-    color: white;
+    font-family: "Radio Canada Big", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.btn-descarga > img {
+    width: 30px;
+}
+
+.btn-descarga:hover {
+    transition: 0.5s;
+    transform: scale(0.9);
+    box-shadow: -5px 5px 5px #5807b6;
+    cursor: pointer;
+}
+
+.btn-descarga:active {
+    transition: 0.2s;
+    color: #e0e0e0;
+}
+
+.disponible-rigth {
+    width: 50%;
     text-align: center;
+    color: #FFFFFF;
+    font-size: 25px;
     
 }
 
-.navbar .btn .textU{
-    position: relative;
-    left: -10px;
-    top: 6px;
+.btn-arriba {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    gap: 5%;
 }
 
-.navbar .btn .imgIcon{
-    position: relative;
-    width: 18px;
-    height: 18px;
-    left: 2px;
-    top: 10px;
+.descarga {
+    padding: 10px 45px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-radius: 5px;
+    border: none;
+    font-family: "Radio Canada Big", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
-  h1{
-position: absolute;
-top: -15px;
-left: 100px;
-color: white;
-font-size: 50px;
-  }
+.descarga > img {
+    width: 30px;
+}
 
+.descarga:hover {
+    transition: 0.5s;
+    transform: scale(0.9);
+    box-shadow: -5px 5px 5px #5807b6;
+    cursor: pointer;
+}
 
-  .fondo{
-    position: absolute;
-    width:450px;
-    height: 450px;
-    background-color: white;
-    top:180px;
-    left: 280px;
-    border-radius: 25px;
-    transform: rotate(45deg);
-  }
+.descarga:active {
+    transition: 0.2s;
+    color: #e0e0e0;
+}
 
-  .text {
-    position: absolute;
+.premium {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+}
+
+.premium-left {
+    width: 50%;
+    text-align: center;
+}
+
+.premium-left > img {
+    width: 350px;
+}
+
+.img-p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-p > img {
+    width: 250px;
+    margin-right: -5%;
+}
+
+.premium-rigth > p {
+    padding: 5%;
+}
+
+.premium-rigth > p, .li {
+    font-size: 23px;
+    color: #FFFFFF;
+}
+
+.precios {
+    margin-top: 3%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+
+.rectangulo-precios {
+    width: 18%;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    height: 350px;
+    padding: 25px;
+    text-align: center;
+}
+
+.data-precios {
+    text-align: justify;
+    height: 280px;
+}
+
+.data-precios > h3 {
+    font-size: 30px;
+}
+
+.data-precios > li {
+    color: #757575;
+}
+
+.btn-comprar {
+    border: none;
+    color: #FFFFFF;
+    background-color: #000000;
+    padding: 12px 35px;
+    border-radius: 8px;
+}
+
+.btn-comprar:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+.btn-comprar:active {
+    transition: 0.2s;
+    color: #000000;
+}
+
+footer {
+    margin: 3% 0 0 0;
+    width: 100%;
+    background-color: black;
     color: white;
-    width: 500px;
-    font-size: 50px;
-    text-align:right ;
-    top: 100px;
-    right: 80px;
-  }
+    display: flex;
+    align-items: center;
+}
+    
+.logo-f {
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.logo-f > img {
+    width: 130px;
+}
 
 
+.tittle {
+    margin-left: -15px;
+    font-size: 30px;
+}
+    
+.dere {
+    font-size: 10px;
+}
 
-  .anuncios{
-    position: absolute;
-    color: white;
-    top:800px;
-  }
+.redes {
+    margin-left: 15%;
+    display: flex;
+    gap: 25px;
+}
+    
+.redes > img {
+    width: 50px;
+}
 
-  .anuncios .tAdd .add{
-    font-size: 50px;
-    position: relative;
-    left: -250px;
-  }
+.redes > img:hover {
+    transition: 0.5s;
+    transform: scale(0.9);
+}
 
-  .target{
-    position: absolute;
-  }
 
-  .target .target1{
-    position: relative;
-    width: 400px;
-    height: 630px;
-    background-color: white;
-    border-radius: 10px;
-    left: -300px;
-  }
-
-  .target .target2{
-    position: relative;
-    width: 400px;
-    height: 630px;
-    background-color: white;
-    border-radius: 10px;
-    left: 140px;
-    top: -630px;
-  }
-
-  .target .target3{
-    position: relative;
-    width: 400px;
-    height: 630px;
-    background-color: white;
-    border-radius: 10px;
-    left: 600px;
-    top: -1260px;
-  }
